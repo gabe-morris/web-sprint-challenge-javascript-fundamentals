@@ -108,6 +108,10 @@ const zooAnimals = [
   */
 
   function USApop(array){
+    const usPop = array.reduce(function(total, item){
+      return total + item.population; //adds current item population to total
+    },0);
+    return usPop; //returns reduced value
   }
   
   

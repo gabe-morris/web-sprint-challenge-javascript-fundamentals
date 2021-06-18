@@ -16,7 +16,7 @@ function myFunction() {
 myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
-//due to lexical scoping, nestedFunction, the inner function, is able to reach into its outer scope and reference it's variable
+//due to lexical scoping, nestedFunction, the inner function, is able to reach into its outer scope and reference its variable
 
 
 
@@ -59,10 +59,15 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function animalNames(array){
+    let displayNames = []; //empty array for names
+    array.forEach(function(item){
+      displayNames.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`)//pushes string with animal name and scientific name into displayNames
+    });
+    return displayNames; //returns full array
   }
-  
+    //Arrow Syntax
+    // array.forEach(item => displayNames.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`));
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
   The zoo needs a list of all their animal's names converted to lower case. 
@@ -70,8 +75,8 @@ const zooAnimals = [
   For example: ['jackal, asiatic', .....]
   */
 
-  function lowerCaseNames(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowerCaseNames(array){
+    return array.map
   }
   
   

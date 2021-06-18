@@ -28,14 +28,20 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+forEach does not return anything, map returns a new array. forEach will mutate the given array, while map will not.
 
-2. Explain the difference between a callback and a higher order function.
+2. Explain the difference between a callback and a higher order function
+
+ A Higher Order Function is a function that takes another function as an argument and a callback function is a function that is passed to another function
 
 3. Can you explain what a closure is and how you used it in the counter function? 
 
-4. Describe the four principles of the 'this' keyword.
+closure gives you access to the outer function's scope
 
+4. Describe the four principles of the 'this' keyword.
 5. Why do we need super() in an extended class?
+
+A: It allows us to inherit the parent class' attributes
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 

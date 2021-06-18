@@ -124,6 +124,7 @@ const zooAnimals = [
   */
 
   function consume(a,b,cb){
+    return cb(a,b);
   }
  
   
@@ -131,13 +132,13 @@ const zooAnimals = [
  // 🦁🦁🦁 Use add to return the sum of two numbers 🦁🦁🦁
   
 function add(a,b){
-    
+    return a + b;
   }
 
 // 🦁🦁🦁 Use multiply to return the product of two numbers 🦁🦁🦁
   
-function multiply(/*Your Code Here */){
-   /*Your Code Here */
+function multiply(a,b){
+   return a * b;
   }
 
  // 🦁🦁🦁 Use greeting to accept a first and last name and return "Hello {first-name} {last-name}, nice to meet you!" 🦁🦁🦁

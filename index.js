@@ -64,10 +64,11 @@ const zooAnimals = [
     array.forEach(function(item){
       displayNames.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`)//pushes string with animal name and scientific name into displayNames
     });
+      //Arrow Syntax
+      // array.forEach(item => displayNames.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`));
     return displayNames; //returns full array
   }
-    //Arrow Syntax
-    // array.forEach(item => displayNames.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`));
+  
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
   The zoo needs a list of all their animal's names converted to lower case. 
@@ -76,9 +77,14 @@ const zooAnimals = [
   */
 
   function lowerCaseNames(array){
-    return array.map
+    const lower = array.map(function(item){
+      return item.animal_name.toLowerCase();//each animal name gets lowercased
+    });
+      //Arrow Syntax
+      //const lower = array.map(item => item.animal_name.toLowerCase());
+    return lower;//returns new lower case array
   }
-  
+
   
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
   The zoo is concerned about animals with a lower population count. 
@@ -109,7 +115,7 @@ const zooAnimals = [
     * The consume function should return the invocation of cb, passing a and b into cb as arguments
   */
 
-  function consume(/*Your Code Here */){
+  function consume(a,b,cb){
     /*Your Code Here */
   }
  

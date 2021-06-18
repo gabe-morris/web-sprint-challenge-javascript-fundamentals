@@ -91,8 +91,13 @@ const zooAnimals = [
   Using lowPopulationAnimals use .filter() to create a new array of objects which contains only the animals with a population of less than 5.
   */
 
-  function lowPopulationAnimals(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowPopulationAnimals(array){
+    const lowPop = array.filter(function(item){
+        return item.population < 5; //returns only if population is < 5
+    });
+      //Arrow Syntax
+      //const lowPop = array.filter(item => item.population < 5);
+    return lowPop; //returns filtered array
   }
   
 
@@ -102,8 +107,7 @@ const zooAnimals = [
   Remember the reduce method takes two arguments: a callback (which itself takes two args - the accumulator and the item), and an initial value for the count.
   */
 
-  function USApop(/*Your Code Here*/){
-    /*Your Code Here*/
+  function USApop(array){
   }
   
   
@@ -116,15 +120,14 @@ const zooAnimals = [
   */
 
   function consume(a,b,cb){
-    /*Your Code Here */
   }
  
   
   /* 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁 */
  // 🦁🦁🦁 Use add to return the sum of two numbers 🦁🦁🦁
   
-function add(/*Your Code Here */){
-    /*Your Code Here*/
+function add(a,b){
+    
   }
 
 // 🦁🦁🦁 Use multiply to return the product of two numbers 🦁🦁🦁
